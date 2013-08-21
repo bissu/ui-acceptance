@@ -1,0 +1,42 @@
+<header class="background-color dark">
+	<div class="row">
+		<nav class="top-bar">
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="#/busca2">Bisssuhteria</a></h1>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div id="busca02">
+	<section class="row">
+		<div class="large-12 columns">
+			<ul class="breadcrumbs">
+				<li><a href="#/busca2">Lista de produtos</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<div class="row">
+
+		<!-- Main panel of content -->
+		<div class="large-12 columns">
+			<div class="panel">
+
+				<h3>Lista de produtos</h3>
+
+				<div class="small-block-grid-2 large-block-grid-4">
+					<li class="product-box" ng-repeat="tshirt in tshirts">
+						<a href="#/blusa2/{{tshirt.id}}">
+							<img ng-src="{{tshirt.img}}" />
+							<h5 class="product-title">{{tshirt.name}}</h5>
+							<span>por {{tshirt.brand}}</span>
+						</a>
+					</li>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

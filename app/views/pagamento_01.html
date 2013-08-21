@@ -1,0 +1,78 @@
+<header class="background-color dark">
+	<div class="row">
+		<nav class="top-bar">
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="#/busca01">Bisssuhteria</a></h1>
+				</li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<section class="row large-6">
+	<ul class="breadcrumbs">
+		<li><a href="#/busca01">Lista de produtos</a></li>
+		<li><a href="#/blusa1/{{tshirt.id}}">Página do produto</a></li>
+		<li class="current">Pagamento</li>
+	</ul>
+</section>
+
+<div class="row large-6">
+	<div class="panel">
+		<p>Preencha os campos abaixo com os dados do <strong>cartão de crédito abaixo</strong> para comprar.</p>
+
+		<section class="creditcard-box">
+			<span><strong>SEU CARTÃO DE CRÉDITO</strong><br/></span>
+			<span><strong>Número do cartão:</strong> 4111 1111 1111 1111<br/></span>
+			<span><strong>Nome do cartão:</strong> Marcelo Silva<br/></span>
+			<span><strong>Código de Segurança:</strong> 123<br/></span>
+			<span><strong>Data de validade:</strong> 06/17</span>
+		</section>
+
+		<form name="paymentForm">
+			<div class="row">
+				<div class="large-7 columns">
+					<label for="cardnumber">Número do cartão</label>
+					<input id="cardnumber" type="text" ng-required="4111111111111111" ng-model="payment.cardnumber" required>
+				</div>
+
+				<div class="large-5 columns" style="padding-top: 21px;">
+					<div id="amex" class="card visa" style="display: inline-block;"></div>
+					<div id="amex" class="card amex" style="display: inline-block;"></div>
+					<div id="amex" class="card mastercard" style="display: inline-block;"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-7 columns">
+					<label for="cardname">Nome no cartão</label>
+					<input id="cardname" type="text" required>
+				</div>
+
+				<div class="large-5 columns">
+					<label for="security">Número de segurança</label>
+					<input id="security" type="text" maxlength="3" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-6 columns">
+					<label for="customDropdown1">Validade</label>
+					<select id="customDropdown1" class="small-3">
+						<option ng-repeat="i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]">{{i}}</option>
+					</select>
+					/
+					<select id="customDropdown2" class="small-4">
+						<option ng-repeat="i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]">{{2012+i}}</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-12 columns">
+					<a href="#/blusa1/{{tshirt.id}}" style="margin: 20px 0 0 0;" class="button darkgrey left">Voltar</a>
+					<input type="submit" class="button blue right" style="margin: 20px 0 0 0;" ng-click="getPayment();" value="Efetuar pagamento">
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

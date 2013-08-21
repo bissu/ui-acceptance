@@ -1,0 +1,24 @@
+.product-box {margin-bottom: 20px}
+.product-title {margin-top: 10px; margin-bottom: 5px !important;}
+
+.cart {margin-top: 50px;}
+.creditcard-box {background-color: #ccc; padding: 15px; margin-bottom: 20px;}
+.creditcard-box span {line-height: 25px;}
+
+/* Types of payment icons */
+.card {background-image: url(http://static.ingresse.com.br/sprite.png); display: inline-block; height: 29px; width: 47px;}
+.card.deactive {opacity:0.2; -moz-opacity: 0.2; filter: alpha(opacity=20);}
+.card.mastercard {background-position: -122px -1px;}
+.card.visa {background-position: -122px -31px;}
+.card.amex {background-position: -122px -61px;}
+.card.boleto {background-position: -122px -481px;}
+.card.diners {background-position: -170px -61px;}
+
+
+/* Layout II */
+
+#busca02 a {
+	color: #000;
+	text-decoration: none;
+	cursor: default;
+}
