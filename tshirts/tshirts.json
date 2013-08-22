@@ -1,0 +1,86 @@
+[
+	{
+		"id": "1",
+		"name": "Parangolé",
+		"img": "img/tshirts/01.jpg",
+		"brand": "Playboys da Garoa",
+		"snippet": "A blusa mais playboy do momento."
+	},
+	{
+		"id": "2",
+		"name": "Beira Mar",
+		"img": "img/tshirts/02.jpg",
+		"brand": "Conforto Materno",
+		"snippet": "A blusa mais patricinha do momento."
+	},
+	{
+		"id": "4",
+		"name": "Super Homem",
+		"img": "img/tshirts/04.jpg",
+		"brand": "Liga da Justiça",
+		"snippet": "A blusa mais playboy do momento."
+	},
+	{
+		"id": "5",
+		"name": "Beira Rio",
+		"img": "img/tshirts/05.jpg",
+		"brand": "Conforto Materno",
+		"snippet": "A blusa mais patricinha do momento."
+	},
+	{
+		"id": "6",
+		"name": "Sambando no escuro",
+		"img": "img/tshirts/13.jpg",
+		"brand": "Formidável",
+		"snippet": "A blusa mais comum do mercado."
+	},
+	{
+		"id": "7",
+		"name": "Tô pra noite",
+		"img": "img/tshirts/14.jpg",
+		"brand": "Playboys da Garoa",
+		"snippet": "A blusa mais playboy do momento."
+	},
+	{
+		"id": "3",
+		"name": "Simple Plan",
+		"img": "img/tshirts/18.jpg",
+		"brand": "Formidável",
+		"snippet": "A blusa mais comum do mercado."
+	},
+	{
+		"id": "8",
+		"name": "Consciência Manda Recado",
+		"img": "img/tshirts/08.png",
+		"brand": "Prestenção",
+		"snippet": "A blusa mais patricinha do momento."
+	},
+	{
+		"id": "9",
+		"name": "Herói Desconhecido",
+		"img": "img/tshirts/09.jpg",
+		"brand": "Liga da Justiça",
+		"snippet": "A blusa mais comum do mercado."
+	},
+	{
+		"id": "10",
+		"name": "Igarapé Limpo",
+		"img": "img/tshirts/10.jpg",
+		"brand": "Conforto Materno",
+		"snippet": "A blusa mais playboy do momento."
+	},
+	{
+		"id": "11",
+		"name": "Sambando no Escuro com Estilo",
+		"img": "img/tshirts/17.jpg",
+		"brand": "Formidável",
+		"snippet": "A blusa mais patricinha do momento."
+	},
+	{
+		"id": "12",
+		"name": "Comprei nas Férias",
+		"img": "img/tshirts/16.jpg",
+		"brand": "Playboys da Garoa",
+		"snippet": "A blusa mais comum do mercado."
+	}
+]
