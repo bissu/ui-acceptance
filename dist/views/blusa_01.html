@@ -1,0 +1,59 @@
+<header class="background-color dark">
+	<div class="row">
+		<nav class="top-bar">
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="#/busca1">Bisssuhteria</a></h1>
+				</li>
+			</ul>
+			<section class="top-bar-section">
+              <!-- Left Nav Section -->
+            	<ul class="left">
+            		<li><a>2. Escolha uma camisa e clique em comprar!</a></li>
+				</ul>
+			</section>
+		</nav>
+	</div>
+</header>
+
+<section class="row">
+	<div class="large-12 columns">
+		<ul class="breadcrumbs">
+			<li><a href="#/busca1">Lista de Produtos</a></li>
+			<li class="current">Página do produto</li>
+		</ul>
+	</div>
+</section>
+
+<div class="row">
+	<div class="large-12 columns">
+		<div class="panel">
+			<div class="row">
+				<div class="columns large-6">
+					<img ng-src="{{tshirt.img}}">
+				</div>
+				<div class="columns large-6">
+					<h1>{{tshirt.name}} <br><small>por {{tshirt.brand}}</small></h1>
+					<p>{{tshirt.snippet}}</p>
+					<form name="cartForm" ng-submit="getCart(cart)" class="cart">
+						<div class="columns large-4">
+							<div class="row">
+								<label for="quantity">Quantidade</label>
+								<input id="quantity" name="quantity" type="number" min="1" max="5" ng-model="cart.quantity" required="">
+							</div>
+							<div class="row">
+								<label for="customDropdown1">Tamanho da blusa</label>
+								<select id="customDropdown1" ng-model="cart.size" ng-options="value for value in ['P','M','G','GG']" required=""></select>
+							</div>
+						</div>
+						<div class="columns large-4">
+							<div class="row">
+								<input type="submit" class="button blue" value="Comprar" ng-disabled="cartForm.$invalid">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

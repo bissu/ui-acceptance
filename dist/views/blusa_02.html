@@ -1,0 +1,64 @@
+<header class="background-color dark">
+	<div class="row">
+		<nav class="top-bar">
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="#/busca2">Bisssuhteria</a></h1>
+				</li>
+			</ul>
+			<section class="top-bar-section">
+              <!-- Left Nav Section -->
+            	<ul class="left">
+            		<li><a>2. Escolha uma camisa e clique em comprar!</a></li>
+				</ul>
+			</section>
+		</nav>
+	</div>
+</header>
+
+<div id="busca02">
+
+	<section class="row">
+		<div class="large-12 columns">
+			<ul class="breadcrumbs">
+				<li><a href="#/busca2">Lista de Produtos</a></li>
+				<li class="current">Página do produto</li>
+			</ul>
+		</div>
+	</section>
+
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="panel">
+				<div class="row">
+					<div class="columns large-6">
+						<img ng-src="{{tshirt.img}}">
+					</div>
+					<div class="columns large-6">
+						<h1>{{tshirt.name}} <br><small>por {{tshirt.brand}}</small></h1>
+						<p>{{tshirt.snippet}}</p>
+						<form name="cartForm" class="cart">
+							<div class="columns large-4">
+								<div class="row">
+									<label for="quantity">Quantidade</label>
+									<input id="quantity" name="quantity" type="text" ng-model="cart.quantity" required="">
+								</div>
+								<div class="row">
+									<label for="customDropdown1">Tamanho da blusa</label>
+									<input type="radio" ng-model="cart.size" value="P"> P
+									<input type="radio" ng-model="cart.size" value="M"> M
+									<input type="radio" ng-model="cart.size" value="G"> G
+									<input type="radio" ng-model="cart.size" value="GG"> GG
+								</div>
+								<div class="row" style="margin-top: 25px">
+									<a ng-click="getCart(cart)" style="color: blue; cursor: pointer">Comprar<a>
+								</a></div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
