@@ -3,7 +3,7 @@
 		<nav class="top-bar">
 			<ul class="title-area">
 				<li class="name">
-					<h1><a href="#/busca1">Bisssuhteria</a></h1>
+					<h1><a onclick="_kmq.push(['record', 'Clicked Blusa1 Logo'])" href="#/busca1">Bisssuhteria</a></h1>
 				</li>
 			</ul>
 			<section class="top-bar-section">
@@ -19,8 +19,8 @@
 <section class="row">
 	<div class="large-12 columns">
 		<ul class="breadcrumbs">
-			<li><a href="#/busca1">Lista de Produtos</a></li>
-			<li class="current">Página do produto</li>
+			<li><a onclick="_kmq.push(['record', 'Clicked Blusa1 Bread 1'])" href="#/busca1">Lista de Produtos</a></li>
+			<li onclick="_kmq.push(['record', 'Clicked Blusa1 Bread 2'])" class="current">Página do produto</li>
 		</ul>
 	</div>
 </section>
@@ -30,7 +30,7 @@
 		<div class="panel">
 			<div class="row">
 				<div class="columns large-6">
-					<img ng-src="{{tshirt.img}}">
+					<img onclick="_kmq.push(['record', 'Clicked Blusa1 Image'])" ng-src="{{tshirt.img}}">
 				</div>
 				<div class="columns large-6">
 					<h1>{{tshirt.name}} <br><small>por {{tshirt.brand}}</small></h1>
@@ -48,7 +48,7 @@
 						</div>
 						<div class="columns large-4">
 							<div class="row">
-								<input type="submit" class="button blue" value="Comprar" ng-disabled="cartForm.$invalid">
+								<input onclick="_kmq.push(['record', 'Clicked Blusa1 Comprar'])" type="submit" class="button blue" value="Comprar" ng-disabled="cartForm.$invalid">
 							</div>
 						</div>
 					</form>
