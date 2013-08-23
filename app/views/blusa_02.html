@@ -32,7 +32,7 @@
 			<div class="panel">
 				<div class="row">
 					<div class="columns large-6">
-						<img ng-src="{{tshirt.img}}" />
+						<img onclick="_kmq.push(['record', 'Clicked Blusa2 Image']);" ng-src="{{tshirt.img}}" />
 					</div>
 					<div class="columns large-6">
 						<h1>{{tshirt.name}} <br/><small>por {{tshirt.brand}}</small></h1>
@@ -51,7 +51,7 @@
 									<input type="radio" ng-model="cart.size" value="GG"> GG
 								</div>
 								<div class="row" style="margin-top: 25px;">
-									<a ng-click="getCart(cart)" style="color: blue; cursor: pointer;">Comprar<a/>
+									<a  ng-click="getCart(cart);" style="color: blue; cursor: pointer;">Comprar<a/>
 								</div>
 							</div>
 						</form>

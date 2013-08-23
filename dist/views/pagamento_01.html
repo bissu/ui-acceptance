@@ -3,7 +3,7 @@
 		<nav class="top-bar">
 			<ul class="title-area">
 				<li class="name">
-					<h1><a href="#/busca01">Bisssuhteria</a></h1>
+					<h1><a onclick="_kmq.push(['record', 'Clicked Pagamento1 Logo'])" href="#/busca1">Bisssuhteria</a></h1>
 				</li>
 			</ul>
 			<section class="top-bar-section">
@@ -18,9 +18,9 @@
 
 <section class="row large-6">
 	<ul class="breadcrumbs">
-		<li><a href="#/busca01">Lista de produtos</a></li>
-		<li><a href="#/blusa1/{{tshirt.id}}">Página do produto</a></li>
-		<li class="current">Pagamento</li>
+		<li><a onclick="_kmq.push(['record', 'Clicked Pagamento1 Bread 1'])" href="#/busca01">Lista de produtos</a></li>
+		<li><a onclick="_kmq.push(['record', 'Clicked Pagamento1 Bread 2'])" href="#/blusa1/{{tshirt.id}}">Página do produto</a></li>
+		<li onclick="_kmq.push(['record', 'Clicked Pagamento1 Bread 3'])" class="current">Pagamento</li>
 	</ul>
 </section>
 
@@ -74,7 +74,7 @@
 			</div>
 			<div class="row">
 				<div class="large-12 columns">
-					<a href="#/blusa1/{{tshirt.id}}" style="margin: 20px 0 0 0" class="button darkgrey left">Voltar</a>
+					<a onclick="_kmq.push(['record', 'Clicked Pagamento1 Voltar'])" href="#/blusa1/{{tshirt.id}}" style="margin: 20px 0 0 0" class="button darkgrey left">Voltar</a>
 					<input type="submit" class="button blue right" style="margin: 20px 0 0 0" ng-click="getPayment();" value="Efetuar pagamento">
 				</div>
 			</div>

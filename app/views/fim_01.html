@@ -1,22 +1,47 @@
 <div class="row large-8" style="margin-top: 20px;">
-	<div class="panel">
-		<div id="wufoo-s7x1x7">
-		Fill out my <a href="http://containgresse.wufoo.com/forms/s7x1x7">online form</a>.
+
+	<div ng-switch on="version">
+
+		<div ng-switch-when="1" class="panel">
+			<div id="wufoo-s7x1x7">
+			Fill out my <a href="http://containgresse.wufoo.com/forms/s7x1x7">online form</a>.
+			</div>
+			<script type="text/javascript">var s7x1x7;(function(d, t) {
+			var s = d.createElement(t), options = {
+			'userName':'containgresse',
+			'formHash':'s7x1x7',
+			'autoResize':true,
+			'height':'838',
+			'async':true,
+			'header':'show'};
+			s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+			s.onload = s.onreadystatechange = function() {
+			var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+			try { s7x1x7 = new WufooForm();s7x1x7.initialize(options);s7x1x7.display(); } catch (e) {}};
+			var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+			})(document, 'script');</script>
+
 		</div>
-		<script type="text/javascript">var s7x1x7;(function(d, t) {
-		var s = d.createElement(t), options = {
-		'userName':'containgresse',
-		'formHash':'s7x1x7',
-		'autoResize':true,
-		'height':'838',
-		'async':true,
-		'header':'show'};
-		s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-		s.onload = s.onreadystatechange = function() {
-		var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-		try { s7x1x7 = new WufooForm();s7x1x7.initialize(options);s7x1x7.display(); } catch (e) {}};
-		var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-		})(document, 'script');</script>
+
+		<div ng-switch-when="2" class="panel">
+			<div id="wufoo-p7x3a1">
+			Fill out my <a href="http://aiesecmn.wufoo.com/forms/p7x3a1">online form</a>.
+			</div>
+			<script type="text/javascript">var p7x3a1;(function(d, t) {
+			var s = d.createElement(t), options = {
+			'userName':'aiesecmn',
+			'formHash':'p7x3a1',
+			'autoResize':true,
+			'height':'838',
+			'async':true,
+			'header':'show'};
+			s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+			s.onload = s.onreadystatechange = function() {
+			var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+			try { p7x3a1 = new WufooForm();p7x3a1.initialize(options);p7x3a1.display(); } catch (e) {}};
+			var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+			})(document, 'script');</script>
+		</div>
 
 	</div>
 </div>

@@ -20,9 +20,9 @@ angular.module('tshirtStoreApp', [])
         templateUrl: 'views/pagamento_01.html',
         controller: 'PagamentoCtrl1'
       })
-      .when('/fim1', {
+      .when('/fim/:version', {
         templateUrl: 'views/fim_01.html',
-        controller: 'FimCtrl1'
+        controller: 'FimCtrl'
       })
 
       .when('/busca2', {
@@ -36,10 +36,6 @@ angular.module('tshirtStoreApp', [])
       .when('/pagamento2', {
         templateUrl: 'views/pagamento_02.html',
         controller: 'PagamentoCtrl2'
-      })
-      .when('/fim2', {
-        templateUrl: 'views/fim_02.html',
-        controller: 'FimCtrl2'
       })
 
       .otherwise({
